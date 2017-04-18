@@ -1,0 +1,8 @@
+rootProject.name = 'LocationApi'
+
+include ':app'
+
+include ':volley'
+project(':volley').projectDir = file('../android_modules/volley')
+
+include ':locationapi'
