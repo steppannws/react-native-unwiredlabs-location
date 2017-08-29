@@ -16,11 +16,15 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.util.Log;
 
+/**
+ * Boot background service on start
+ */
 public class BootUpReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		if(!isMyServiceRunning(BackgroundLocationService.class, context)) {
 
+			// AlarmManager to schedule background location request
 		    AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 		    Intent service = new Intent(context, BackgroundLocationService.class);
 		    PendingIntent pi = PendingIntent.getService(context, 0, service, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -41,6 +45,7 @@ public class BootUpReceiver extends BroadcastReceiver {
 	    Log.e("BOOT RECEIVER", "start service");
 	}
 
+	// TODO: put this method in an utility
 	private boolean isMyServiceRunning(Class<?> serviceClass,Context context) {
         ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {

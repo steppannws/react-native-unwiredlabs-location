@@ -49,12 +49,16 @@ public class BackgroundLocationModule extends ReactContextBaseJavaModule {
 		return constants;
 	}
 
+	/**
+	 * Initialize BackgroundLocation from JS. Storing server url passed as a parameter
+	 *
+	 * @param {String} serverUrl
+	 */
 	@ReactMethod
 	public void init(String serverUrl) {
 		Activity currentActivity = getCurrentActivity();
 
-		// Log.e("BOOO", "SERVER URL: " + serverUrl);
-
+		// Save server URL tu use it later to send location
 		try {
 			Toast.makeText(currentActivity, "Background Location Service started", Toast.LENGTH_SHORT).show();
 
@@ -64,15 +68,20 @@ public class BackgroundLocationModule extends ReactContextBaseJavaModule {
 	    }
 	    catch (IOException e) {
 	    	Toast.makeText(currentActivity, "Error starting Background Location Service", Toast.LENGTH_SHORT).show();
-	        // Log.e("Exception", "File write failed: " + e.toString());
 	    }
 
+		// Start background service
 		if(currentActivity != null && isMyServiceRunning(BackgroundLocationService.class) == false) {
 			Intent i = new Intent(currentActivity, BackgroundLocationService.class);
 			currentActivity.startService(i);
 		}
 	}
 
+	/**
+	 * Check if a service is already running
+	 *
+	 * @param {Class<?>} serviceClass
+	 */
 	private boolean isMyServiceRunning(Class<?> serviceClass) {
 	  ActivityManager manager = (ActivityManager) getReactApplicationContext().getSystemService(Context.ACTIVITY_SERVICE);
 	  for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {

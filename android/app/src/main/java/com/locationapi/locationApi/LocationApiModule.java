@@ -34,10 +34,12 @@ import com.unwiredlabs.locationapi.Location.LocationAdapter;
 import com.unwiredlabs.locationapi.Location.UnwiredLocationListener;
 
 public class LocationApiModule extends ReactContextBaseJavaModule {
+	
+	// TODO: provide api key from JS on initialization
 	private String api_key = "API_KEY";
 	private static final String DURATION_SHORT_KEY = "SHORT";
   	private static final String DURATION_LONG_KEY = "LONG";
-  	private LocationAdapter locationAdapter = null;//new LocationAdapter(getApplicationContext(), "a9860eaa0fa9e1");
+  	private LocationAdapter locationAdapter = null;
   	private Callback callback = null;
   	private ReactApplicationContext theContext;
 
@@ -59,6 +61,9 @@ public class LocationApiModule extends ReactContextBaseJavaModule {
 		return constants;
 	}
 
+	/**
+	 * Initialize LocationAdapter
+	 */
 	@ReactMethod
 	public void init() {
 		Activity currentActivity = getCurrentActivity();
@@ -74,11 +79,17 @@ public class LocationApiModule extends ReactContextBaseJavaModule {
         }
 	}
 
+	// TODO: Enable/disable UnwiredLocation API to use device location service
 	@ReactMethod
 	public void enableLocation(Boolean status) {
 		LocationApiHelper.getInstance().enableLocation(status);
 	}
 
+	/**
+	 * Get user position. Returning a callback with latitude and longitude
+	 *
+	 * @param {Callback (latitude, longitude)} locationCallback
+	 */
 	@ReactMethod
 	public void getLocation(Callback locationCallback) {
 		callback = locationCallback;

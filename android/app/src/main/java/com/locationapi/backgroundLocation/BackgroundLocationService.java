@@ -46,16 +46,19 @@ import com.locationapi.locationApi.LocationApiHelper;
 
 public class BackgroundLocationService extends Service
 {
-    private String api_key = "API_KEY";
+    // TODO: provide api key from JS on initialization
+    private String api_key = "API_KEY"; 
     private static final String TAG = "LOCATIONAPI";
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 5000;//5 * 60 * 1000;
+    private static final int LOCATION_INTERVAL = 5000; // in milliseconds
     private static final float LOCATION_DISTANCE = 10f;
     private static String SERVER_URL = "";
     private static RequestQueue mQueue;
-    // private final ScheduledExecutorService schduler = Executors.newSingleThreadScheduledExecutor();
     private final ScheduledExecutorService schduler = Executors.newScheduledThreadPool(1);
 
+    /**
+     * Android location listener
+     */
     private class LocationListener implements android.location.LocationListener
     {
         Location mLastLocation;
@@ -116,11 +119,19 @@ public class BackgroundLocationService extends Service
         return null;
     }
 
+    /**
+     * Boot service
+     *
+     * @param {Intent} intent
+     * @param {int} flags
+     * @param {int} startId
+     */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId)
     {
         Log.e(TAG, "onStartCommand:: INIT");
         try {
+            // Get saved server URL passed from JS
             InputStream inputStream = getApplicationContext().openFileInput("config.txt");
 
             if ( inputStream != null ) {
@@ -134,6 +145,8 @@ public class BackgroundLocationService extends Service
                 }
 
                 inputStream.close();
+
+                // Set server URL
                 SERVER_URL = stringBuilder.toString();
             }
         }
@@ -145,30 +158,19 @@ public class BackgroundLocationService extends Service
 
         Log.e(TAG, "onStartCommand:: URL " + SERVER_URL);
 
+        // Send coordinates to server each 30 seconds
         new Thread(new Runnable() {
             public void run() {
                 while(true) {
                    try {
                     Thread.sleep(30000);
                     startLocationService();
-                    // handler.sendEmptyMessage(0);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } 
                 }
             }
         }).start();
-
-        // Runnable runnable = new Runnable() {
-        //   public void run() {
-        //     startLocationService();
-        //   }
-        // };
-
-        // startLocationService();
-
-        // ScheduledExecutorService schduler = Executors.newSingleThreadScheduledExecutor(1);
-        // schduler.scheduleAtFixedRate(runnable, 10, 30, TimeUnit.SECONDS);
 
         if(intent != null) {
             Log.e(TAG, "onStartCommand:: STARTUNG SUPER");
@@ -187,8 +189,12 @@ public class BackgroundLocationService extends Service
 
         Log.e(TAG, "onCreate");
 
+        // TODO: make switch between UnwiredLocation and Native location services
+
+        // Initialize UnwiredLocationListener
         initializeLocationManager();
 
+        // Request location to Android location listener
         try {
             mLocationManager.requestLocationUpdates(
                     LocationManager.NETWORK_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
@@ -209,6 +215,10 @@ public class BackgroundLocationService extends Service
         }
     }
 
+    /**
+     * Destroy Location Manager
+     *
+     */
     @Override
     public void onDestroy()
     {
@@ -228,6 +238,10 @@ public class BackgroundLocationService extends Service
         }
     }
 
+    /**
+     * Initialize LocationManager
+     *
+     */
     private void initializeLocationManager() {
         Log.e(TAG, "initializeLocationManager");
         if (mLocationManager == null) {
@@ -235,6 +249,10 @@ public class BackgroundLocationService extends Service
         }
     }
 
+    /**
+     * Start Unwired Location service
+     *
+     */
     private void startLocationService() {
         Log.e(TAG, "startLocationService");
 
@@ -244,6 +262,9 @@ public class BackgroundLocationService extends Service
             locationAdapter.setPriority(LocationAdapter.PRIORITY_BALANCED_POWER_ACCURACY);
 
             UnwiredLocationListener unwiredLocationListener = new UnwiredLocationListener() {
+                /**
+                 * Fire new location to server when it changes
+                 */
                 @Override
                 public void onLocationChanged(Location location) {
                     //Call the function that will handle the location once returned
@@ -252,12 +273,18 @@ public class BackgroundLocationService extends Service
                 }
             };
             
+            // Call to get location promise
             locationAdapter.getLocation(unwiredLocationListener);
         } catch(Throwable e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * Send JSON object with coordinates and timestamp to server
+     *
+     * @param {Location} location
+     */
     private void sendLocationToServer(Location location) {
         Log.e(TAG, "sendLocationToServer:: URL: " + SERVER_URL);
 
