@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_f87d179b4f53c93e79104aec73e75f179eca0b7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_36915521be4060262617e1d60dbeed5f6a507f37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_c455664d8686aded57c22344ae4dfca410f15c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_a0e8e863fbc4464ed679eb0d0b59c4f4ce7240a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_e9ae3414cdbb810e322482ed88b965f0cc8a70d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_fba46d8f8823fcfda8d072cdeef43b58fe1c9876.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_f0b07c0dcc7d9254c853b3e0ac795bd6e8ff7f8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_5e6776ae24a02e2b3ae14374451f86c600eff5f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_8281ed74ec622975fa1f13d6bf0b11caa9a35356.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_d10d00bd194053155690708c93d6f375a26e15f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_4ac3c6c7018c5f2a1596150fb987c8f95ea512d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.3_c84cab1d202a9e594c74c1d61d52b43473eaba06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_f1e5672a07577ab572516021089d775339e7de83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_df51b17ad027bca824d8351ef0db15b44c12e242.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_d0b65d816247bccd50063c0bdb5e64c7e883f61f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_0e00b68ed2064b55ab0e889358654a1af0a54ddf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_36291b4ebe17363dbb1cc3c620ef8bc7a01471cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_db136198adf3a7b5a6356fbfb9af3b05a20e8e08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stepan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_51c132f5ffe4c1f236411d36cb41e9992ebab8b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_b90c2a69ed9a684bdb02a18d9637ba856800a056.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_12e7d6bb5c3e530456bbde64a725eca64d0a64f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_45f13fcdfb61f7e72f19ec695b0b3c5443e8b7ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Volumes/Kepler/PROJECTS/HUMBER/git/react-native-unwiredlabs-location/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_ee348376fd3ff4dc6a8d1e635b3416b4aae91611.jar" />
+    </item>
+
+</items>
